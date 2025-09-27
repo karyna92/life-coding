@@ -1,16 +1,14 @@
-import Users from './components/Users'
-import UserCard from './components/UserCard'
-import './App.css'
+import Users from './components/Users/Users';
+import './App.css';
+import User from './components/User/User';
 
 function App() {
-
-
   return (
     <>
- <Users/>
- <UserCard/>
+      {/* <Users /> */}
+      <User />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

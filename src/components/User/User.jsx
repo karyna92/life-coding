@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
 import { fetchUsers } from '../../API/users';
 
-function Users() {
-  const [users, setUsers] = useState([]);
+function User() {
+  const [user, setUser] = useState([]);
 
   const fetchWrapper = async () => {
-    const users = await fetchUsers(10);
-    setUsers(users);
+    const user = await fetchUsers(1);
+    setUser(user);
   };
 
   useEffect(() => {
     fetchWrapper();
   }, []);
 
-  return <div>{JSON.stringify(users)}</div>;
+  return <div>{JSON.stringify(user)}</div>;
 }
-export default Users;
+export default User;
